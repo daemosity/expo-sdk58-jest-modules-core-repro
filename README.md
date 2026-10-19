@@ -275,7 +275,7 @@ Recorded: 2026-10-18
 
 4. [`faec482`](../../commit/faec482) on `verify/pr-46104`: #46104's source changes, applied with patch-package.
 
-5. [`b405ff5`](../../commit/b405ff5) on `verify/pr-46104-plus-domock`: the one-line `jest.doMock` change.
+5. [`44baa1a`](../../commit/44baa1a) on `verify/pr-46104-plus-domock`: the one-line `jest.doMock` change.
 
 > [!NOTE]
 > `patches/` contains source changes from [expo/expo#46104](https://github.com/expo/expo/pull/46104) by Vincent Ong (expo/expo is MIT-licensed), plus one added line on the `verify/pr-46104-plus-domock` branch.
