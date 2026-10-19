@@ -1,7 +1,6 @@
 # [SDK 58][jest-expo] Cannot find module 'expo-modules-core' when npm nests it under `expo`
 
-> Reproduction for expo/expo#NNNN. I'll archive this repo once it's resolved.
-<!-- TODO: replace NNNN after filing the issue -->
+> Reproduction for [expo/expo/issues/51784](https://github.com/expo/expo/issues/51784). I'll archive this repo once it's resolved.
 
 ## Summary
 
