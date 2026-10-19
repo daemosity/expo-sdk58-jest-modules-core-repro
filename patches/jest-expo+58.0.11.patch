@@ -30,7 +30,7 @@ index 0000000..f2a29b3
 +  resolveExpoModulesCoreModuleId,
 +};
 diff --git a/node_modules/jest-expo/src/preset/setup.js b/node_modules/jest-expo/src/preset/setup.js
-index e0decaa..cb63d25 100644
+index e0decaa..89aca64 100644
 --- a/node_modules/jest-expo/src/preset/setup.js
 +++ b/node_modules/jest-expo/src/preset/setup.js
 @@ -13,6 +13,7 @@ const stackTrace = require('stacktrace-js');
@@ -41,11 +41,13 @@ index e0decaa..cb63d25 100644
  
  // window isn't defined as of react-native 0.45+ it seems
  if (typeof window !== 'object') {
-@@ -254,7 +255,7 @@ function attemptLookup(moduleName) {
+@@ -253,8 +254,8 @@ function attemptLookup(moduleName) {
+ }
  
  // TODO(@kitten): This is an invalid dependency chain
- jest.doMock('expo-modules-core', () => {
+-jest.doMock('expo-modules-core', () => {
 -  const ExpoModulesCore = jest.requireActual('expo-modules-core');
++jest.doMock(resolveExpoModulesCoreModuleId(), () => {
 +  const ExpoModulesCore = jest.requireActual(resolveExpoModulesCoreModuleId());
  
    const { EventEmitter, NativeModule, SharedObject } = globalThis.expo;
